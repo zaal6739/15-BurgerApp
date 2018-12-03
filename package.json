@@ -1,0 +1,24 @@
+{
+  "name": "15-burgerapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaal6739/15-BurgerApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaal6739/15-BurgerApp/issues"
+  },
+  "homepage": "https://github.com/zaal6739/15-BurgerApp#readme",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
