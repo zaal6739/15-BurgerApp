@@ -11,8 +11,7 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
-function objToSql(ob) {
-
+function convertToSql(ob) {
   var arr = [];
 
   for (var key in ob) {
@@ -32,8 +31,7 @@ var orm = {
       cb(result);
     });
   },
-  // vals is an array of values that we want to save to cols
-  // cols are the columns we want to insert the values into
+
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -58,7 +56,7 @@ var orm = {
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
-    queryString += objToSql(objColVals);
+    queryString += convertToSql(objColVals);
     queryString += " WHERE ";
     queryString += condition;
 
